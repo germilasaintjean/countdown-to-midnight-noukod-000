@@ -1,15 +1,14 @@
-
-   def countdown(x)
-   message = "HAPPY NEW YEAR!"
-     x = 10
-     10.times do
-     puts "#{x} SECOND(S)!"
+def countdown(number)
+     number = 10
+   loop do
+       puts "#{number} SECOND(S)!\n"
        sleep(1)
-     x-=1
-
-     end
-     return message
+       number -= 1
+     #if number == 12
+     break
+     return "HAPPY NEW YEAR!"
    end
+  
    def countdown_with_sleep (countdown)
      sleep(5)
    end
